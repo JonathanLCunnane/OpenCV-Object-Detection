@@ -91,7 +91,7 @@ class Detector:
             # The & 0xFF is used to take the last byte of the key press since numlock can sometimes change the first byte of a key press. 
             # 0xFF just represents 11111111 (8 1s).
             key = cv2.waitKey(1) & 0xFF
-            if key == ord("q") or key == ord("c"):
+            if key == ord("q") or key == ord("c") or key == ord("Q") or key == ord("C"):
                 break
 
             # Get next frame
